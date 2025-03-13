@@ -3,6 +3,92 @@
 	<head>
 		<meta name="author" content="Farhan Hanif Azhary">
 		<title>Latihan Form</title>
+		<style>
+			body {
+				background-color: #008000;
+			}
+			
+			.h1 {
+				color: #ffffff;
+			}
+			
+			#h1 {
+				color: #999999;
+			}
+			
+			#text-biru {
+				color: #0000ff;
+				font-style: oblique;
+			}
+			
+			input[type="text"] {
+				border-radius: 15px;
+				background-color: #ffC0CB;
+				color: #0000FF;
+				padding: 10px;
+				width: 90%;
+				border-color: #000000;
+			}
+			
+			input[type="date"] {
+				border-radius: 15px;
+				background-color: #ffC0CB;
+				color: #0000FF;
+				padding: 10px;
+				width: 90%;
+				border-color: #000000;
+			}
+			
+			textarea {
+				border-radius: 15px;
+				background-color: #ffC0CB;
+				color: #0000FF;
+				padding: 10px;
+				width: 90%;
+				border-color: #000000;
+			}
+			
+			input[type="file"] {
+				border-radius: 15px;
+				background-color: #ffC0CB;
+				color: #0000FF;
+				padding: 10px;
+				width: 90%;
+				border-color: #000000;
+			}
+			
+			* {
+				color: #ffffff;
+			}
+			
+			fieldset {
+				background-color: #ffc080;
+			}
+			
+			::placeholder {
+				color: #008000;
+			}
+			
+			#button {
+				color: #000000;
+				background-color: #ffffff;
+				border-radius: 15px;
+				width: 50%;
+			}
+			
+			#button:hover {
+				border-radius: 15px;
+				background-color: #0000ff;
+				color: #fffff;
+				width: 50%;
+			}
+			
+			input[type="reset"] {
+				display: flex;
+				margin-top: -20px;
+				margin-left: 70px;
+			}
+		</style>
 	</head>
 	<body>
 		<h1>Form Pendaftaran</h1>
@@ -10,6 +96,7 @@
 			<table width="100%">
 				<tr>
 					<td width="50%">
+						<h1 id="h1">Data Mahasiswa</h1>
 						<fieldset>
 							<legend>Data Pribadi</legend>
 							<table>
@@ -77,6 +164,7 @@
 						</fieldset>
 					</td>
 					<td>
+						<h1 id="text-biru">Data Ortu</h1>
 						<fieldset>
 							<legend>Data Orang Tua</legend>
 							<table>
@@ -122,8 +210,8 @@
 								
 								<tr>
 									<td>
-										<input type="submit" value="Submit">
-										<input type="reset">
+										<input id="button" type="submit" value="Submit">
+										<input id="button" type="reset">
 									</td>
 								</tr>
 							</table>
